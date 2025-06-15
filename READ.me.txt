@@ -1,0 +1,25 @@
+# 🗞️ News Aggregator from RSS Feeds
+
+This is a Python-based news scraper that collects and stores articles from multiple global and Indian news sources via RSS feeds. The application fetches complete article content (cleaned paragraphs only) and saves them in a structured JSON format, running continuously at fixed intervals.
+
+## 🌍 Supported News Sources
+
+- BBC World
+- Times of India
+- NDTV
+- The Hindu
+
+## 🚀 Features
+
+- Parses RSS feeds and extracts article metadata (title, description, link, publish time).
+- Fetches and cleans full article text (paragraphs with no HTML attributes).
+- Avoids re-fetching already saved articles using a local record.
+- Saves all data in `news_articles.json`.
+- Runs in a continuous loop (every 10 seconds).
+
+## 🛠️ Installation
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/news-rss-aggregator.git
+   cd news-rss-aggregator
